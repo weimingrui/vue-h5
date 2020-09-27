@@ -2,7 +2,7 @@
  * @Author: Arthur
  * @Date: 2020-09-27 16:41:54
  * @LastEditors: Arthur
- * @LastEditTime: 2020-09-27 17:19:18
+ * @LastEditTime: 2020-09-27 17:45:02
  * @Description: file content
  */
 const webpack = require("webpack");
@@ -62,9 +62,9 @@ module.exports = {
     css: {
         loaderOptions: {
             sass: {
-                sassOptions: {
-                    data: `@import '@/assets/style/mixin.scss';`
-                }
+                // sassOptions: {
+                    additionalData: `@import "~@/assets/style/mixin.scss";`
+                // }
             },
             postcss: {
                 plugins: [
